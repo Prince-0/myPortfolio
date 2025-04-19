@@ -1,3 +1,88 @@
+/* Add this to your existing CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+body {
+  background-color: #6a6f76;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffc107;
+}
+
+section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  border-bottom: 2px solid #0d6efd;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #0d6efd;
+}
+
+.skill-box, .education-box {
+  background: rgb(250, 249, 249);
+  padding: 1rem;
+  border-left: 4px solid #0d6efd;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+#scrollTopBtn:hover {
+  background: #0056b3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +92,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
+  background: #f3e2e2;
   color: #333;
   line-height: 1.6;
 }
@@ -53,6 +138,7 @@ body {
 
 /* Hero */
 .hero {
+  margin-top: 25px;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -78,6 +164,7 @@ body {
   max-width: 1000px;
   margin: auto;
   height: 98vh;
+  justify-content: center;
 }
 
 h2 {
@@ -97,25 +184,36 @@ h2 {
 .skills-list li {
   background-color: #1e1e2f;
   color: white;
-  padding: 0.7rem 1.2rem;
+  padding: 0rem  0rem;
   border-radius: 25px;
   font-size: 1rem;
+}
+div.skill-box{
+  margin-left : 32px;
 }
 
 /* Education */
 .education-item {
   background: white;
-  padding: 1.5rem;
+  padding-left: 0px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   margin-bottom: 2rem;
-}
+} 
+
+/*#education.section{
+  padding: 0px 0px;
+}*/
+
 
 /* Projects */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+}
+#projects.section{
+  padding: 0px 0px;
 }
 
 .project-card {
@@ -158,4 +256,3 @@ button:hover {
   background-color: #00d9ff;
   color: black;
 }
-

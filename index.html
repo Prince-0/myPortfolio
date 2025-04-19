@@ -22,58 +22,82 @@
   </header>
 
   <section id="home" class="hero">
-    <h1>Hello, I'm Prince <span>Kumar</span> </h1>
+    <h1>Prince <span>Kumar</span> </h1>
     <p>Web Developer</p>
+    <section id="home">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I am <strong>Prince Kumar</strong>, a passionate frontend developer and a full stack developer in making , focusing on creating beautiful and functional web experiences.</p>
+      <p>This site is my little corner on the internet. Feel free to explore!</p>
+    </section>
   </section>
 
   <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Git & GitHub</li>
-      <li>Responsive Design</li> 
-      <li>Responsive Design</li>
-      <li>Responsive Design</li>
-      <li>Responsive Design</li>
-    </ul>
+      <h2>Skills</h2>
+      <div class="skill-box">🌐 HTML5, JavaScript , CSS </div>
+      <div class="skill-box">⚙️ ReactJS , NodeJS </div>
+      <div class="skill-box">🎨 C , C++ and SQL language</div>
+      <div class="skill-box">💡 OOPS , DSA , Networking and DBMS</div>
+      <div class="skill-box">🌐 Fluent in Communication</div>
+      <div class="skill-box">⚙️ Git & GitHub</div>
+      <div class="skill-box">💡 Problem Solving & Debugging</div>
   </section>
+    
 
   <section id="education" class="section">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>Bachelor's Degree in Computer Science</h3>
-      <p>ABC University | 2020 - 2024</p>
-      <p>Graduated with honors, specialized in web development.</p>
-    </div>
-  </section>
+      <h2>Education</h2>
+      <div class="education-box">
+        <strong>Bachelor of Technology (B.Tech)</strong><br />
+        Assam University , 2019 - 2023<br>
+        CGPA: 7.93
+      </div>
+      <div class="education-box">
+        <strong>Higher Secondary (12th Grade)</strong><br />
+        Trident Public School , 2016 - 2018<br>
+        PercentAge: 69.8
+      </div>
+      <div class="education-box">
+        <strong>Appeared for Improvement (12th Grade)</strong><br />
+        Private Candidate , 2018 - 2019<br>
+        PercentAge: 84.4
+      </div>
+    </section>
+    
 
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal portfolio made with HTML, CSS, and JS.</p>
-      </div>
-      <div class="project-card">
-        <h3>To-Do App</h3>
-        <p>Task management app with local storage support.</p>
-      </div>
+    <div class="skill-box">
+      <strong>1. Personal Portfolio Website</strong><br />
+      A responsive personal website built using HTML, CSS, and JavaScript to showcase my work.<br>Currently you are on very that page.
     </div>
+    <div class="skill-box">
+      <strong>2. shopkart app using ReactJS. </strong><br />
+      A REACT app where user can add or remove the product,with quantity, in the cart .
+    </div>
+    <div class="skill-box">
+      <strong>3. Automatic Vehicle Parking System.   (Major project)</strong> <br />
+      An automatic vehicle parking model , using Arduino Microcontroller , IR Sensor and Python framework ,embedded through Serial module.
+      It works in a way such that when a vehicle enters the parking lot ,the sensors command the camera to capture the frame. The installed camera captures the number plate of vehicle and record this data including time in database. 
+      If there is atleast one parking lot is vacant ,then only the entry gate will open and it eventually update the slot availabilty on the screen ,otherwise the gate won't open and the message will display that "NO SLOTS LEFT" . 
+      In the exit system , when a particular vehicle want to exit ,the sensors again detect the vehicle and command the camera to capture the frame , if the vehicle number matches the record in the database , the system will display total duration and generates a QR code for the payment process. The exit gate will open only after the consumer scan and pays the amount.
+      After the vehicle leaves the parking arena , the slots will update itself again.
+    </div>
+    <div class="skill-box">
+      <strong>4. Smart dustbin Using IoT. </strong><br />
+      An IoT based project using Arduino microcontroller and IR Sensor. The smart dustbins are installed at various places in a locality which displays the garbage level.
+      The sensors will detect the user and open its lid itself ,only when the garbage level is below at a certain level.
+    </div>
+    
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>📧 Email: princekremail@example.com</p>
+      <p>📱 Phone: +91-7424906**3</p>
+      <p>🌐 GitHub: <a href="https://github.com/Prince-0" target="_blank">github.com/Prince-0</a></p>
+      <p>📧 LinkedIn: <a href="https://www.linkedin.com/in/prince-kumar-101a731b2" target="_blank">linkedin.com/in/prince-kumar-101a731b2</a></p>
+    </section>
   </section>
-
-
   <script src="script.js"></script>
 </body>
 </html>
