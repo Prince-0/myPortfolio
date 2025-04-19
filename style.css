@@ -256,3 +256,6 @@ button:hover {
   background-color: #00d9ff;
   color: black;
 }
+body {
+  background-color: pink;
+}
