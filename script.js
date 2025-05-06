@@ -33,10 +33,10 @@ scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/*function toggleMenu() {
+function toggleMenu() {
   const links = document.querySelector('.nav-links');
   links.classList.toggle('show');
-}*/
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
