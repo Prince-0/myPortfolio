@@ -32,3 +32,25 @@ window.addEventListener('scroll', () => {
 scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+/*function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+  links.classList.toggle('show');
+}*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links a");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
+});
+
+

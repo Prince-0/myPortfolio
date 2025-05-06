@@ -11,9 +11,8 @@
   <header>
     <nav class="navbar">
       <div class="logo">MyPortfolio</div>
-      <div class="hamburger" onclick="toggleMenu()"> &#9776; </div>
       <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -24,10 +23,11 @@
   </header>
 
   <section id="home" class="hero">
-    <h1>Welcome to my Portfolio</h1><br>
+    <h1>Prince <span>Kumar</span> </h1>
+    <p>Web Developer</p>
     <section id="home">
-      
-      <p>I am <strong>PRINCE KUMAR</strong>, a passionate frontend developer and a full stack developer in making , focusing on creating beautiful and functional web experiences.</p>
+      <h2>Welcome to My Portfolio</h2>
+      <p>I am <strong>Prince Kumar</strong>, a passionate frontend developer and a full stack developer in making , focusing on creating beautiful and functional web experiences.</p>
       <p>This site is my little corner on the internet. Feel free to explore!</p>
     </section>
   </section>
@@ -35,7 +35,7 @@
   <section id="skills" class="section-box">
       <h2>Skills</h2>
       <div class="skill-box">🌐 HTML5, JavaScript , CSS </div><br>
-      <div class="skill-box">⚙️ ReactJS , NodeJS , TypeScript</div><br>
+      <div class="skill-box">⚙️ ReactJS , NodeJS </div><br>
       <div class="skill-box">🎨 C , C++ and SQL language</div><br>
       <div class="skill-box">💡 OOPS , DSA , Networking and DBMS</div><br>
       <div class="skill-box">🌐 Fluent in Communication</div><br>
@@ -68,11 +68,11 @@
     <h2>Projects</h2>
     <div class="skill-box">
       <strong>Personal Portfolio Website</strong> <br/>
-      A responsive personal website built using HTML, CSS, and JavaScript to showcase my work.<br>
+      A responsive personal website built using HTML, CSS, and JavaScript to showcase my work.<br>Currently you are on very that page.<br>
     </div><br>
     <div class="skill-box">
       <strong>Shopkart app using ReactJS. </strong><br/>
-      A shopping clone app built using ReactJS where user can add or remove the product,with quantity, in the cart. <br>
+      A REACT app where user can add or remove the product,with quantity, in the cart. <br>
     </div><br>
     <div class="skill-box">
       <strong>Automatic Vehicle Parking System.   (Major project)</strong> <br/>
@@ -112,14 +112,5 @@
     </section>
   </section>
   <script src="script.js"></script>
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-  
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
-  </script>
-  
 </body>
 </html>

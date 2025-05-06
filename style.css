@@ -1,259 +1,174 @@
-/* Add this to your existing CSS file */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: #f3f4f6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-}
-
-body {
-  background-color: #6a6f76;
-  color: #333;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #0d6efd;
-  color: white;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ffc107;
-}
-
-section {
-  padding: 100px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h2 {
-  border-bottom: 2px solid #0d6efd;
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: #0d6efd;
-}
-
-.skill-box, .education-box {
-  background: rgb(250, 249, 249);
-  padding: 1rem;
-  border-left: 4px solid #0d6efd;
-  margin: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  border-radius: 8px;
-}
-
-/* Scroll-to-top button */
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #0d6efd;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  z-index: 999;
-}
-#scrollTopBtn:hover {
-  background: #0056b3;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f3e2e2;
-  color: #333;
-  line-height: 1.6;
 }
 
 /* Navbar */
-.navbar {
+nav {
+  background-color: #558dc9;
+  color: white;
+  padding: 10px 20px;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: #1e1e2f;
-  color: white;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.hamburger {
+  display: none;
 }
 
 
-.navbar .logo {
-  font-size: 1.6rem;
+.logo {
+  font-size: 24px;
   font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  display: inline;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: white;
+  font-size: 0.95rem;
   font-weight: 500;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #00d9ff;
+  color: #ffea00;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  margin-top: 25px;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: cadetblue;
+  padding: 40px;
+  margin: 100px auto 40px;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background: linear-gradient(135deg, #00d2ff, #3a47d5);
-  color: white;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 
-.hero p {
-  font-size: 1.2rem;
+.hero h3 {
+  font-size: 1.4rem;
+  color: #f1f1f1;
+  margin-bottom: 20px;
 }
 
-/* Section Layout */
-.section {
-  padding: 6rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-  height: 98vh;
-  justify-content: center;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* Skills */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
-}
-
-.skills-list li {
-  background-color: #1e1e2f;
-  color: white;
-  padding: 0rem  0rem;
-  border-radius: 25px;
-  font-size: 1rem;
-}
-div.skill-box{
-  margin-left : 32px;
-}
-
-/* Education */
-.education-item {
-  background: white;
-  padding-left: 0px;
+/* Section Box Styling */
+.section-box {
+  background-color: white;
+  margin: 60px auto;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
-} 
-
-/*#education.section{
-  padding: 0px 0px;
-}*/
-
-
-/* Projects */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-#projects.section{
-  padding: 0px 0px;
-}
-
-.project-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
+.section-box:hover {
   transform: translateY(-5px);
 }
 
-/* Contact */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-  margin: auto;
+.section-box h2 {
+  font-size: 24px;
+  color: #0d6efd;
+  margin-bottom: 15px;
 }
 
-input, textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.section-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-button {
-  padding: 0.8rem;
-  background: #1e1e2f;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.section-box li {
+  margin-bottom: 6px;
 }
 
-button:hover {
-  background-color: #00d9ff;
-  color: black;
-}
+/* ✅ Responsive Fixes for Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
 
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+  
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero, .section-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h3 {
+    font-size: 1.2rem;
+  }
+
+  .section-box h2 {
+    font-size: 20px;
+  }
+}
