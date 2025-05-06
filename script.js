@@ -1,4 +1,3 @@
-
 // Smooth scroll for nav links
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', function (e) {
@@ -9,35 +8,39 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Simple contact form submission handler
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert("Thanks for reaching out! I'll get back to you soon.");
-  this.reset();
-});
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert("Thanks for reaching out! I'll get back to you soon.");
+    this.reset();
+  });
+}
 
-
+// Scroll-to-top button
 const scrollBtn = document.createElement('button');
 scrollBtn.id = "scrollTopBtn";
 scrollBtn.innerHTML = "↑";
+scrollBtn.style.display = "none";
+scrollBtn.style.position = "fixed";
+scrollBtn.style.bottom = "20px";
+scrollBtn.style.right = "20px";
+scrollBtn.style.padding = "10px 15px";
+scrollBtn.style.borderRadius = "50%";
+scrollBtn.style.fontSize = "20px";
+scrollBtn.style.cursor = "pointer";
+scrollBtn.style.zIndex = "1001";
 document.body.appendChild(scrollBtn);
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = 'block';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
 });
 
 scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-function toggleMenu() {
-  const links = document.querySelector('.nav-links');
-  links.classList.toggle('show');
-
-
+// Hamburger menu toggle
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
@@ -46,11 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
+
   links.forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("show");
     });
   });
 });
-
-
